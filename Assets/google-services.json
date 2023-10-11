@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "183553753038",
+    "firebase_url": "https://poloshirt-login-default-rtdb.firebaseio.com",
+    "project_id": "poloshirt-login",
+    "storage_bucket": "poloshirt-login.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183553753038:android:d4bb709a5a5a45eec2b59f",
+        "android_client_info": {
+          "package_name": "com.Xrev.PoloShirt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaWTnFCeMd_sdgs8J67zrZr92BOr6FHbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

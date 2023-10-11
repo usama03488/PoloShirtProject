@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0dd45e14d4cf643bf98ac73ee92f7d, type: 3}
+  m_Name: ShirtColors
+  m_EditorClassIdentifier: 
+  ShirtMaterials:
+  - {fileID: 2100000, guid: d85d33c21c61a344d9e2894b3ad4bb22, type: 2}
+  - {fileID: 2100000, guid: 6fda93c07748d2642b0bb592d1b55de2, type: 2}
+  - {fileID: 2100000, guid: 31469df874b3fff4398b736df2e3cb85, type: 2}
+  - {fileID: 2100000, guid: c8b1a8b7c60691643b8f05e6b085dfb2, type: 2}
+  - {fileID: 2100000, guid: 1435b0dfc00a86343b32bcea3673fbd0, type: 2}
+  - {fileID: 2100000, guid: 865dc46716b16de4aa4992986bb7e90a, type: 2}
+  ColorCodes:
+  - ff6347
+  - CC252C
+  - 8a0303
+  - 9b111e
+  - b11226
+  - ffc1cc
+  - ff66cc
+  - de5d83
+  - ff91a4
+  - DCAE96
+  - E30B5D
+  - ff1dce
+  - DA70D6
+  - DE3163
+  - c54b8c
+  - 9966cc
+  - 8031A7
+  - 7851a9
+  - 583759
+  - 483248
+  - 89CFF0
+  - CCCCFF
+  - 367588
+  - 0F52BA
+  - 000080
+  - 00FFFF
+  - 1ac1dd
+  - 81D8D0
+  - 30D5C8
+  - 003C5F
+  - 7fff00
+  - '4CBB17 '
+  - 756d47
+  - 05472A
+  - 01796F
+  - fffacd
+  - daa520
+  - eaa221
+  - FFBF00
+  - ffc87c
+  - E6BE8A
+  - cfb53b
+  - b5a642
+  - ECBE07
+  - AA9855
+  - c0ad8c
+  - 9E6A19
+  - B28965
+  - 38250e
+  - 624a2e
+  - C1B7B0
+  - 708090
+  - 8d8e74
+  - 606263
+  - 71797E
+  - 343434
+  - 555d50
+  - 00040D
+  - 36454F
+  - 2b272b
+  - F1F5F1
+  - f6e8b1
+  - FAEBD7
+  - dfd0b7
+  - e0dbd1
+  - fbceb1
+  - EC6A37
+  - f2a337
+  - CD5909
+  - DF7D60
+  - C4C3D0
+  - C8A2C8
+  - D7B4F3
+  - AD4D8C
+  - D7B8E9
+  - aaa9ad
+  - E5E4E2
+  - B9B8B7
+  - 3aa8c1
+  - C0C0C0
+  - 739bd0
+  - 00ffef
+  - 1fcecb
+  - 87CEEB
+  - 00a4b4
+  - 937e5e
+  - f5deb3
+  - DFD5CA
+  - 483C32
+  - f4a460
+  - ffda03
+  - 'da9100 '
+  - D2A10C
+  - FFC30B
+  - FFF380
+  - CD7F32
+  - 665d1e
+  - CC9054
+  - C04000
+  - 967444

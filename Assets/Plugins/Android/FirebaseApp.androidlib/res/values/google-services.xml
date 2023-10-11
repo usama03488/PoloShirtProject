@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id">
+  <string name="firebase_database_url" translatable="false">https://poloshirt-login-default-rtdb.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">183553753038</string>
+  <string name="google_storage_bucket" translatable="false">poloshirt-login.appspot.com</string>
+  <string name="project_id" translatable="false">poloshirt-login</string>
+  <string name="google_api_key" translatable="false">AIzaSyBaWTnFCeMd_sdgs8J67zrZr92BOr6FHbo</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBaWTnFCeMd_sdgs8J67zrZr92BOr6FHbo</string>
+  <string name="google_app_id" translatable="false">1:183553753038:android:d4bb709a5a5a45eec2b59f</string>
+</resources>
