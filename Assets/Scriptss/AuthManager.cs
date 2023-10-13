@@ -17,6 +17,7 @@ public class AuthManager : MonoBehaviour
     FirebaseUser newUser;
     FirebaseDatabase database;
     DatabaseReference Refrence;
+    public TMP_Text SigningInIssue;
     private string UserID;
     // Start is called before the first frame update
     void Start()
@@ -116,11 +117,32 @@ public class AuthManager : MonoBehaviour
             FirebaseException exception = taskresult.Exception.GetBaseException() as FirebaseException;
             AuthError autherror = (AuthError)exception.ErrorCode;
             Debug.LogError("There are some exceptions in singing up"+autherror);
+         
+         
+
+            string message = "Register Failed!";
+            switch (autherror)
+            {
+                case AuthError.MissingEmail:
+                    message = "Missing Email";
+                    break;
+                case AuthError.MissingPassword:
+                    message = "Missing Password";
+                    break;
+                case AuthError.WeakPassword:
+                    message = "Weak Password";
+                    break;
+                case AuthError.EmailAlreadyInUse:
+                    message = "Email Already In Use";
+                    break;
+            }
+            SigningInIssue.text = message;
 
         }
         else
         {
-          newUser= taskresult.Result.User;
+            SigningInIssue.text = "Sucessfully registered";
+            newUser = taskresult.Result.User;
             // newUser = taskresult.Result;
             AddUserData();
             manager.SucessfullySignedup();
@@ -138,12 +160,48 @@ public class AuthManager : MonoBehaviour
         yield return new WaitUntil(() => LoginResult.IsCompleted);
         if (LoginResult.Exception != null)
         {
+            
             FirebaseException exception = LoginResult.Exception.GetBaseException() as FirebaseException;
             AuthError autherror = (AuthError)exception.ErrorCode;
+            
             Debug.LogError("There are some exceptions in singing up" + autherror);
+
+            
+
+            string message=" " ;
+            switch (autherror)
+            {
+                case AuthError.Failure:
+                    message = "Email or password is incorrect";
+                    break;
+                case AuthError.MissingEmail:
+                    message = "Missing Email";
+                    break;
+                case AuthError.MissingPassword:
+                    message = "Missing Password";
+                    break;
+                case AuthError.WeakPassword:
+                    message = "Weak Password";
+                    break;
+                case AuthError.EmailAlreadyInUse:
+                    message = "Email Already In Use";
+                    break;
+                case AuthError.WrongPassword:
+                    message = "password is incorrect";
+                    break;
+                case AuthError.UnverifiedEmail:
+                    message = "your email is not verified";
+                    break;
+                case AuthError.InvalidRecipientEmail:
+                    message = "Email is incorrect";
+                    break;
+
+            }
+            SigningInIssue.text = message;
         }
         else
         {
+            SigningInIssue.text = "Sucessfully Login";
             newUser = LoginResult.Result.User;
             UserID = newUser.UserId;
             manager.entreRoom.Invoke();

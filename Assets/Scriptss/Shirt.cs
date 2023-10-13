@@ -46,15 +46,21 @@ public class Shirt : MonoBehaviour
     }
     public void pickRandomColor(int index)
     {
-        Set_id(index);
+        Debug.Log(index++);
+        Set_id(index++);
         // int randomNumber = Random.Range(0, shirtcolors.Getlength());
 
         // Shirtmaterial.material = shirtcolors.ShirtMaterials[randomNumber];
         Material material1=new Material(dummymat);
     
         Shirtmaterial.material = material1;
-        material1.color = Colors.FromHex(shirtcolors.ColorCodes[index]);
-        Shirtmaterial.material.color = Colors.FromHex(shirtcolors.ColorCodes[index]);
+        if (shirtcolors.ColorCodes.Count >index)
+        {
+            material1.color = Colors.FromHex(shirtcolors.ColorCodes[index]);
+            Shirtmaterial.material.color = Colors.FromHex(shirtcolors.ColorCodes[index]);
+
+        }
+     
      //   Shirtmaterial.material.color=shirtcolors.ColorCodes[0]
     }
     // Update is called once per frame
