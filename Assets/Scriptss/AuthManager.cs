@@ -37,7 +37,7 @@ public class AuthManager : MonoBehaviour
                 Debug.LogError("Could not resolve dependencies" + dependencyStatus);
             }
         });
-        AddnewItem();
+      //  AddnewItem();
     }
     public IEnumerator  GetFavouritesList()
     {
@@ -68,12 +68,12 @@ public class AuthManager : MonoBehaviour
     {
         Shirts shirt = new Shirts();
      
-        shirt.ColorName = "pink";
+       //d shirt.ColorName = "pink";
         //string jsondata = JsonUtility.ToJson(2,"CheeryRed");
         Debug.LogError("Refrence" + Refrence);
-        Refrence.Child("ShirtsColor").Child("2").SetValueAsync("CherryRed");
-        Refrence.Child("ShirtsColor").Child("3").SetValueAsync("Bloody Red");
-        Refrence.Child("ShirtsColor").Child("4").SetValueAsync("Ruby Red");
+     //   Refrence.Child("ShirtsColor").Child("2").SetValueAsync("CherryRed");
+     //   Refrence.Child("ShirtsColor").Child("3").SetValueAsync("Bloody Red");
+      //  Refrence.Child("ShirtsColor").Child("4").SetValueAsync("Ruby Red");
         
         //Refrence.SetRawJsonValueAsync(jsondata).ContinueWith(task=>{
         //    if (task.IsCompleted)
@@ -141,6 +141,7 @@ public class AuthManager : MonoBehaviour
         }
         else
         {
+        
             SigningInIssue.text = "Sucessfully registered";
             newUser = taskresult.Result.User;
             // newUser = taskresult.Result;
@@ -201,6 +202,9 @@ public class AuthManager : MonoBehaviour
         }
         else
         {
+           PlayerPrefs.SetString("Username", manager.GetEmail());
+             PlayerPrefs.SetString("password", manager.GetPassword());
+            PlayerPrefs.SetFloat("FirstTime", 1);
             SigningInIssue.text = "Sucessfully Login";
             newUser = LoginResult.Result.User;
             UserID = newUser.UserId;

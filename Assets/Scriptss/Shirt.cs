@@ -13,7 +13,11 @@ public class Shirt : MonoBehaviour
     public  bool grabbed = false;
     public Material dummymat;
     private int Shirt_Id = 0;
-  
+    private string Shirturl;
+    public string GetShirtUrl()
+    {
+        return Shirturl;
+    }
    // public GameManager manager;
     // Start is called before the first frame update
     void Start()
@@ -79,8 +83,9 @@ public class Shirt : MonoBehaviour
         //Debug.Log("saved position"+position.position.y);
         //Debug.Log("current position"+transform.parent.position.y);
         //  Debug.Log("current rotation"+transform.parent.position.y);
-//transform.position = initialtransform.position;
+        //transform.position = initialtransform.position;
         //transform.rotation = initialtransform.rotation;
+     GameManager.Instance.StopHint();
        transform.position = position;
         transform.rotation = rotation;
         grabbed = false;
@@ -88,6 +93,7 @@ public class Shirt : MonoBehaviour
     public void ThisShirtSelected()
     {
         GameManager.Instance.SetShirt_Id(this);
+        StartCoroutine(GameManager.Instance.ShowHint());
         grabbed = true;
     }
 }

@@ -2132,6 +2132,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Openopensea",
+            "id": "7d8324b0-e982-459e-bbfa-6693f108ee4d",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "af4dbf61-fffb-470c-bb04-e1ba26f32c50",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c4a2b67f-ede0-43a2-bd1f-c391836466d4",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
